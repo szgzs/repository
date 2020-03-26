@@ -1,4 +1,4 @@
-Add-Printer -ConnectionName \\hubudws520\HPAC_BW
+Add-Printer -ConnectionName \\server\printer_name
 (New-Object -ComObject WScript.Network).SetDefaultPrinter('HPAC_BW')
 $wsObject = New-Object -COM WScript.Network
-$wsObject.SetDefaultPrinter(“\\hubudws520\HPAC_BW”)
+$wsObject.SetDefaultPrinter(“\\server\printer_name”)
